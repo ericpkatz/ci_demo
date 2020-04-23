@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha spec.js"
+    "test": "mocha spec.js",
+    "test:dev": "DATABASE_URL=postgres://localhost/acme_db_test npm run test -- --watch",
+    "start:dev": "nodemon server"
   },
   "keywords": [],
   "author": "",
